@@ -4,6 +4,7 @@ names <- read.csv("baby-names.csv", header = T, stringsAsFactors = F)
 
 # extracting all data related to my name
 my_name <- subset(names, name == "Elizabeth" & sex == "girl")
+delma <- subset(names, name == "Delma" & sex == "girl")
 
 # plotting my name's popularity over time
 library(ggplot2)
