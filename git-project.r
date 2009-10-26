@@ -3,11 +3,11 @@
 names <- read.csv("baby-names.csv", header = T, stringsAsFactors = F)
 
 # extracting all data related to my name
-my_name <- subset(names, name == "Garrett" & sex == "boy")
+my_name <- subset(names, name == "Elizabeth" & sex == "girl")
 
 # plotting my name's popularity over time
 library(ggplot2)
-qplot(year, prop, data = my_name, geom = "line", main = "Percentage of children named Garrett, by year")
+qplot(year, prop, data = my_name, geom = "line", main = "Percentage of children named Elizabeth, by year")
 
 
 # for later
